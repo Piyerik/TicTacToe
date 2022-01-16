@@ -1,3 +1,6 @@
+/**
+ * Log to the console the board using the X and O bitflags
+ */
 pub fn create_board(x: u16, o: u16) -> String {
     let mut string_board = String::from("  ");
     
@@ -14,6 +17,9 @@ pub fn create_board(x: u16, o: u16) -> String {
     string_board
 }
 
+/**
+ * Calculate how many turns have occurred in the game. This is useful to determine whos turn it is
+ */
 pub fn get_turns(board: u16) -> u8 {
     let mut turns: u8 = 0;
 

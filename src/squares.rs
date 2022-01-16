@@ -4,8 +4,10 @@ pub struct Squares {
 }
 
 
-
 impl Squares {
+    /**
+     * Get the vector of squares and winning positions
+     */
     pub fn new() -> Self {
 
         let squares = vec![
